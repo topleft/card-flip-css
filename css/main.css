@@ -1,0 +1,40 @@
+/* add your styles here */
+
+#portfolio .portfolio-item {
+  position: relative;
+}
+
+#portfolio .portfolio-item .primary,
+#portfolio .portfolio-item .secondary {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+-webkit-transition: -webkit-transform 0.3s;
+        transition: transform 0.3s;
+}
+
+#portfolio .portfolio-item .primary {
+
+  background-color: rgb(255,255,255);
+
+
+
+}
+#portfolio .portfolio-item .secondary {
+
+  background-color: rgb(200,200,200);
+  -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg);
+}
+
+
+#portfolio .portfolio-item:hover .primary {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+
+}
+
+#portfolio .portfolio-item:hover .secondary {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+          }
